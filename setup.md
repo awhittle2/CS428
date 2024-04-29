@@ -14,8 +14,9 @@ Key terminology:
 ## Downloading Virtualbox
 
 System Requirements:
-- 1GB of main memory***
-- 8GB of free disk space***
+- 4GB of main memory***
+- 2 CPU cores
+- 80GB of free disk space***
 
 (*** - needs updating once we know exactly how large of space we need)
 
@@ -44,3 +45,17 @@ Oracle Corporation (VirtualBox archive signing key) <info@virtualbox.org>```
     - Continue on with the steps below
 7. Update your system with: ```sudo apt-get update```
 8. Install VirtualBox with: ```sudo apt-get install virtualbox-6.1```
+
+## Downloading the Windows ISO
+- https://www.microsoft.com/en-us/software-download/windows10
+- Maybe: https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
+
+## Downloading the Remnux ISO
+- https://docs.remnux.org/install-distro/get-virtual-appliance
+
+
+-- Look into FLARE-VM: https://github.com/mandiant/flare-vm
+
+## References
+- https://www.sentinelone.com/labs/building-a-custom-malware-analysis-lab-environment/
+- https://alexoloriz.com/building-a-malware-analysis-sandbox-a-step-by-step-guide/
