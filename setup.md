@@ -67,7 +67,7 @@ Oracle Corporation (VirtualBox archive signing key) <info@virtualbox.org>```
 - https://www.microsoft.com/en-us/software-download/windows10
 - Maybe: https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
 
-## Downloading the Remnux ISO
+## Downloading the Remnux OVA
 - https://docs.remnux.org/install-distro/get-virtual-appliance
 
 ## Setting Up the VMs
