@@ -22,7 +22,7 @@ System Requirements:
 
 ### Windows Host OS
 1. Please visit this site to: https://download.virtualbox.org/virtualbox/7.0.16/VirtualBox-7.0.16-162802-Win.exe
-2. 
+2.  
 
 ### Linux Host OS
 Depending on what Linux distro you're host is running, your steps may be different. Please refer to https://www.virtualbox.org/wiki/Linux_Downloads for more information on the specifics on the different distros. For the purpose of this tutorial, the host OS will be Ubuntu 22.04.
@@ -45,6 +45,12 @@ Oracle Corporation (VirtualBox archive signing key) <info@virtualbox.org>```
     - Continue on with the steps below
 7. Update your system with: ```sudo apt-get update```
 8. Install VirtualBox with: ```sudo apt-get install virtualbox-6.1```
+
+## Downloading VMWare
+
+### Windows Host OS
+
+### Linux Host OS
 
 ## Downloading the Windows ISO
 - https://www.microsoft.com/en-us/software-download/windows10
