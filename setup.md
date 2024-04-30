@@ -1,5 +1,16 @@
 # The Environment
 
+## Table of Contents
+[About](#About)
+[Downloading Virtualbox](#Downloading-Virtualbox)
+[Downloading VMWare](#Downloading-VMWare)
+[Downloading the Windows ISO](#Downloading-the-Windows-ISO)
+[Downloading the Remnus ISO](#Downloading-the-Remnus-ISO)
+[Setting Up the VMs](#Setting-Up-the-VMs)
+[VM Networking](#VM-Networing)
+[References](#References)
+
+## About
 Why are we using virtualization?
 - Can run multipel operating systems simultaneously
 - Easier software installations
@@ -58,6 +69,17 @@ Oracle Corporation (VirtualBox archive signing key) <info@virtualbox.org>```
 
 ## Downloading the Remnux ISO
 - https://docs.remnux.org/install-distro/get-virtual-appliance
+
+## Setting Up the VMs
+### Virtualbox
+
+### VMWare
+
+
+## VM Networking
+### Virtualbox
+
+### VMWare
 
 
 -- Look into FLARE-VM: https://github.com/mandiant/flare-vm
