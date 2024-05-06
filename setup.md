@@ -1,35 +1,48 @@
-# The Environment
+# Virtualization Environment Setup Tutorial
 
 ## Table of Contents
-[About](#About)
-[Downloading Virtualbox](#Downloading-Virtualbox)
-[Downloading VMWare](#Downloading-VMWare)
-[Downloading the Windows ISO](#Downloading-the-Windows-ISO)
-[Downloading the Remnus ISO](#Downloading-the-Remnus-ISO)
-[Setting Up the VMs](#Setting-Up-the-VMs)
-[VM Networking](#VM-Networing)
-[References](#References)
+1. [About Virtualization](#About-Virtualization)
+2. [Downloading VirtualBox](#Downloading-VirtualBox)
+3. [Downloading VMware](#Downloading-VMware)
+4. [Downloading the Windows ISO](#Downloading-the-Windows-ISO)
+5. [Downloading the Remnux ISO](#Downloading-the-Remnux-ISO)
+6. [Setting Up the VMs](#Setting-Up-the-VMs)
+7. [VM Networking](#VM-Networking)
+8. [References](#References)
 
-## About
-Why are we using virtualization?
-- Can run multipel operating systems simultaneously
-- Easier software installations
-- Testing and disaster recovery
-- Infrastructure consolidation
+## About Virtualization
+**Why Use Virtualization?**
+- Run multiple operating systems concurrently on a single physical machine.
+- Simplify software installations and deployments.
+- Facilitate testing environments and disaster recovery.
+- Optimize and consolidate computing infrastructure.
 
-Key terminology:
-- Host OS: The operating system of the physical computer
-- Guest OS: The operating system that is running inside the virtual machine
-- Virtual machine (VM): The special environment that Oracle VM VirtualBox creates for your guest OS while it is running
+**Key Terminology:**
+- **Host OS**: The operating system of the physical computer.
+- **Guest OS**: The operating system running inside the virtual machine.
+- **Virtual Machine (VM)**: A software-based emulation of a physical computer.
 
-## Downloading Virtualbox
+**System Requirements**:
+- **Memory**: At least 4GB RAM
+- **Processor**: 2 CPU cores
+- **Disk Space**: Minimum 80GB of free space
+    - 75GB for FlareVM
+    - 60GB for REMnux
 
-System Requirements:
-- 4GB of main memory***
-- 2 CPU cores
-- 80GB of free disk space***
+## Downloading VirtualBox
 
-(*** - needs updating once we know exactly how large of space we need)
+### Installation Instructions:
+
+#### For Windows Host OS
+1. Visit [VirtualBox Downloads](https://download.virtualbox.org/virtualbox/7.0.16/VirtualBox-7.0.16-162802-Win.exe) to download the installer.
+2. Run the downloaded executable and follow the on-screen instructions to install VirtualBox.
+
+#### For Linux Host OS (Ubuntu 22.04)
+1. Open the terminal.
+2. Add VirtualBox repository by editing the source list:
+   ```bash
+   echo "deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] https://download.virtualbox.org/virtualbox/debian jammy contrib" | sudo tee -a /etc/apt/sources.list
+
 
 ### Windows Host OS
 1. Please visit this site to: https://download.virtualbox.org/virtualbox/7.0.16/VirtualBox-7.0.16-162802-Win.exe
