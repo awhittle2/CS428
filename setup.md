@@ -25,7 +25,7 @@
 **System Requirements**:
 - **Memory**: At least 4GB RAM
 - **Processor**: 2 CPU cores
-- **Disk Space**: Minimum 80GB of free space
+- **Disk Space**: Minimum 160GB of free space (preferably  256GB)
     - 75GB for FlareVM
     - 60GB for REMnux
 
@@ -38,37 +38,25 @@
 2. Run the downloaded executable and follow the on-screen instructions to install VirtualBox.
 
 #### For Linux Host OS (Ubuntu 22.04)
+#### GUI Version
+1. Visit [VirtualBox Downloads](https://download.virtualbox.org/virtualbox/7.0.18/virtualbox-7.0_7.0.18-162988~Ubuntu~jammy_amd64.deb) to download the installer.
+2. Run the download executable and follow the on-screen instructions to install VirtualBox.
+
+#### Command Line Version
 1. Open the terminal.
 2. Add VirtualBox repository by editing the source list:
    ```bash
    echo "deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] https://download.virtualbox.org/virtualbox/debian jammy contrib" | sudo tee -a /etc/apt/sources.list
-
-
-### Windows Host OS
-1. Please visit this site to: https://download.virtualbox.org/virtualbox/7.0.16/VirtualBox-7.0.16-162802-Win.exe
-2.  
-
-### Linux Host OS
-Depending on what Linux distro you're host is running, your steps may be different. Please refer to https://www.virtualbox.org/wiki/Linux_Downloads for more information on the specifics on the different distros. For the purpose of this tutorial, the host OS will be Ubuntu 22.04.
-
-1. Open the terminal
-2. Type ```vim /etc/apt/sources.list```
-3. Enter the following line in the file: ```deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] https://download.virtualbox.org/virtualbox/debian jammy contrib```
-4. Download and register with: ```wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg --dearmor```
-5. Ensure that your key fingerprint for oracle_vbox_2016.asc is ```B9F8 D658 297A F3EF C18D  5CDF A2F6 83C5 2980 AECF
-Oracle Corporation (VirtualBox archive signing key) <info@virtualbox.org>```
-    - If the signatures were invalid, enter the following commands:
-    - ```sudo -s -H```
-    - ```apt-get clean```
-    - ```rm /var/lib/apt/lists/*```
-    - ```rm /var/lib/apt/lists/partial/*```
-    - ```apt-get clean```
-    - ```apt-get update```
-    - ```sudo apt-key remove 5CDFA2F683C52980AECF```
-    - ```sudo apt-key remove D9C954422A4B98AB5139```
-    - Continue on with the steps below
-7. Update your system with: ```sudo apt-get update```
-8. Install VirtualBox with: ```sudo apt-get install virtualbox-6.1```
+   ```
+3. Download and add the Oracle VirtualBox signing key:
+    ```bash
+    wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo gpg --dearmor -o /usr/share/keyrings/oracle-virtualbox-2016.gpg
+    ```
+4. Update your package list and install VirtualBox:
+    ```bash
+    sudo apt-get update
+    sudo apt-get install virtualbox-6.1
+    ```
 
 ## Downloading VMWare
 
@@ -77,8 +65,8 @@ Oracle Corporation (VirtualBox archive signing key) <info@virtualbox.org>```
 ### Linux Host OS
 
 ## Downloading the Windows ISO
-- https://www.microsoft.com/en-us/software-download/windows10
-- Maybe: https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
+1. Go to [Windows Enterprise Landing Page](https://info.microsoft.com/ww-landing-windows-10-enterprise.html)
+2. 
 
 ## Downloading the Remnux OVA
 - https://docs.remnux.org/install-distro/get-virtual-appliance
