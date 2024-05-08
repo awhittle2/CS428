@@ -65,11 +65,30 @@
 ### Linux Host OS
 
 ## Downloading the Windows ISO
-1. Go to [Windows Enterprise Landing Page](https://info.microsoft.com/ww-landing-windows-10-enterprise.html)
-2. 
+1. Go to the [Windows Enterprise Landing Page](https://info.microsoft.com/ww-landing-windows-10-enterprise.html)
+2. Enter in the required information under the "Register for your free trial today" section (first name, last name, email, company name, country/region, company size, job role, phone)
+    - Note: It is recommended that you don't enter in your actual information as it is not verified by microsoft (including the phone number)
+3. Click the download now button
+4. Select the 64-bit edition under ISO
+5. The download should start automatically
 
-## Downloading the Remnux OVA
-- https://docs.remnux.org/install-distro/get-virtual-appliance
+This link may work as well to [download the Windows ISO](https://go.microsoft.com/fwlink/p/?LinkID=2208844&clcid=0x409&culture=en-us&country=US)
+
+## Downloading the REMnux OVA
+### VMWare
+1. Visit the [REMnux download documentition](https://docs.remnux.org/install-distro/get-virtual-appliance)
+2. Under Step 1: Download the Virtual Appliance File click the link for Box
+3. Press the download button
+
+This link may work as well to [download the REMnux OVA for VMWare](https://app.box.com/s/l8uo6loohghdatius2f7icuyp14q3wp6)
+
+### VirtualBox
+1. Visit the [REMnux download documentition](https://docs.remnux.org/install-distro/get-virtual-appliance)
+2. Under Step 1: Download the Virtual Appliance File click the "VirtualBox OVA" tab
+3. Click the link to box
+4. Press the download button
+
+This link may work as well to [download the REMnux OVA for VirtualBox](https://app.box.com/s/8matvs5l0gc8vkr4xfq3szdm7mc9o0ad)
 
 ## Setting Up the VMs
 ### Virtualbox
