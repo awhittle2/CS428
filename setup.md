@@ -30,14 +30,11 @@
     - 60GB for REMnux
 
 ## Downloading VirtualBox
-
-### Installation Instructions:
-
-#### For Windows Host OS
+### For Windows Host OS
 1. Visit [VirtualBox Downloads](https://download.virtualbox.org/virtualbox/7.0.16/VirtualBox-7.0.16-162802-Win.exe) to download the installer.
 2. Run the downloaded executable and follow the on-screen instructions to install VirtualBox.
 
-#### For Linux Host OS (Ubuntu 22.04)
+### For Linux Host OS (Ubuntu 22.04)
 #### GUI Version
 1. Visit [VirtualBox Downloads](https://download.virtualbox.org/virtualbox/7.0.18/virtualbox-7.0_7.0.18-162988~Ubuntu~jammy_amd64.deb) to download the installer.
 2. Run the download executable and follow the on-screen instructions to install VirtualBox.
@@ -59,9 +56,7 @@
     ```
 
 ## Downloading VMWare
-
 ### Windows Host OS
-
 ### Linux Host OS
 
 ## Downloading the Windows ISO
@@ -75,13 +70,6 @@
 This link may work as well to [download the Windows ISO](https://go.microsoft.com/fwlink/p/?LinkID=2208844&clcid=0x409&culture=en-us&country=US)
 
 ## Downloading the REMnux OVA
-### VMWare
-1. Visit the [REMnux download documentition](https://docs.remnux.org/install-distro/get-virtual-appliance)
-2. Under Step 1: Download the Virtual Appliance File click the link for Box
-3. Press the download button
-
-This link may work as well to [download the REMnux OVA for VMWare](https://app.box.com/s/l8uo6loohghdatius2f7icuyp14q3wp6)
-
 ### VirtualBox
 1. Visit the [REMnux download documentition](https://docs.remnux.org/install-distro/get-virtual-appliance)
 2. Under Step 1: Download the Virtual Appliance File click the "VirtualBox OVA" tab
@@ -89,6 +77,13 @@ This link may work as well to [download the REMnux OVA for VMWare](https://app.b
 4. Press the download button
 
 This link may work as well to [download the REMnux OVA for VirtualBox](https://app.box.com/s/8matvs5l0gc8vkr4xfq3szdm7mc9o0ad)
+
+### VMWare
+1. Visit the [REMnux download documentition](https://docs.remnux.org/install-distro/get-virtual-appliance)
+2. Under Step 1: Download the Virtual Appliance File click the link for Box
+3. Press the download button
+
+This link may work as well to [download the REMnux OVA for VMWare](https://app.box.com/s/l8uo6loohghdatius2f7icuyp14q3wp6)
 
 ## Setting Up the VMs
 ### Virtualbox
