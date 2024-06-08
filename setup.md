@@ -283,7 +283,61 @@ This link may work as well to [download the REMnux OVA for VMWare](https://app.b
 27. Type `sudo reboot now` and wait for the reboot to finish
 ![remnux-screenshot](./images/remnux-27.png)
 
+### Final Touches
+1. Make sure everything was installed correctly by looking at log.txt, then exit out
+![flarevm-screenshot](./images/flare-0.png)
+2. In the bottom right, click the network icon and press "Network & Internet settings" option
+![flarevm-screenshot](./images/flare-1.png)
+3. Press the "properties" option under "Ethernet0"
+![flarevm-screenshot](./images/flare-2.png)
+4. Click "Ethernet 0" on the "Network Connections" page
+![flarevm-screenshot](./images/flare-3.png)
+5. Press "Properties" on the "Ethernet0 Status" page
+![flarevm-screenshot](./images/flare-4.png)
+6. Find the option labeled "Internet Protocol Version 4 (TCP/IPv4)" and press "Properties"
+![flarevm-screenshot](./images/flare-5.png)
+7. Under "Use the following IP address" option, type the IP address you want for FlareVM and "255.255.255.0" as the subnet mask. Then under "Use the following DNS server addresses" option, type the IP address you used for REMNux VM. Press ok to save the changes
+![flarevm-screenshot](./images/flare-6.png)
+8. Type ipconfig to make sure your changes was successful and that the IP address matches what you put in the last step. If it is not successful, make sure to follow steps 9 and 10
+![flarevm-screenshot](./images/flare-7.png)
+9. In VMware, right click the WIndows VM and select "Settings..."
+![flarevm-screenshot](./images/flare-8.png)
+10. Make sure that the virtual network is set to VMnet2 or whatever the network you setup for REMnux
+![flarevm-screenshot](./images/flare-9.png)
+11. To make sure the network is correctly set up, try pinging the IP address of REMnux. If it is unsuccessful look at the network settings or restart the VM
+![flarevm-screenshot](./images/flare-10.png)
+12. To make sure the network is correctly set up on the REMnux side, try pinging the IP address of FlareVM
+![flarevm-screenshot](./images/remnux-after-flare-10.png)
+13. In VMware, select the "Take a snapshot of this virtual machine" button on FlareVM
+![flarevm-screenshot](./images/flare11.png)
+14. Enter in a relevant description for the snapshot and press "Take Snapshot"
+![flarevm-screenshot](./images/flare-12.png)
+15. In VMware, select the "Take a snapshot of this vritual machine" button on REMnux
+![flarevm-screenshot](./images/remux-after-flare-12.png)
+16. Enter in a relevant description for the snapshot and press "Take Snapshot"
+![flarevm-screenshot](./images/remnux-after-flare-12-2.png)
+17. Shut down both VMs, select the Windows 10 machine/FlareVM, and press file in the top left
+![flarevm-screenshot](./images/export-1.png)
+18. In the settings, press "Export to OVF..."
+![flarevm-screenshot](./images/export-2.png)
+19. Save the file
+![flarevm-screenshot](./images/export-3.png)
+20. Wait for the export
+![flarevm-screenshot](./images/export-4.png)
+21. Then, select the REMnux VM and press file in the top left
+![flarevm-screenshot](./images/export-5.png)
+22. In the file settings, press "Export to OVF..."
+![flarevm-screenshot](./images/export-6.png)
+23. Save the file and wait for the export to finish
+![flarevm-screenshot](./images/export-7.png)
 
+Note: Please note that while OVF is not the same as OVA, VMware has a tool to change OVFs to OVAs. Follow this tutorial to help figure out the process: https://www.vmwarearena.com/convert-ova-to-ovf-using-the-vmware-ovf-tool/
+
+### Importing OVAs
+1. In VMware, press file in the top left, and press "Open..."
+![flarevm-screenshot](./images/export-8.png)
+2. Find the file, and select open. VMware should automatically start the import process
+![flarevm-screenshot](./images/export-9.png)
 
 ## References
 - https://www.sentinelone.com/labs/building-a-custom-malware-analysis-lab-environment/
