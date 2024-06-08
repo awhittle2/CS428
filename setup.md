@@ -203,9 +203,9 @@ This link may work as well to [download the REMnux OVA for VMWare](https://app.b
 49. In the taskbar, search for "Powershell", and run it as an administrator
 ![windows-screenshot](./images/windows-49.png)
 50. Type `cd C:\Users\Malware-Box\Desktop\`
-	- Note: The command will be different if your username is different
+- Note: The command will be different if your username is different
 ![windows-screenshot](./images/windows-50.png)
-51. Type `(New-Object net.webclient).DownloadFile('https://raw.githubusercontent.com/mandiant/flare-vm/main/install.ps1',"$([Environment]::GetFolderPath("Desktop"))\\install.ps1")
+51. Type `(New-Object net.webclient).DownloadFile('https://raw.githubusercontent.com/mandiant/flare-vm/main/install.ps1',"$([Environment]::GetFolderPath("Desktop"))\\install.ps1")`
 ![windows-screenshot](./images/windows-51.png)
 52. Ensure that install.ps1 appeared on your desktop and type `Unblock-File .\install.ps1`
 ![windows-screenshot](./images/windows-52.png)
@@ -282,6 +282,7 @@ This link may work as well to [download the REMnux OVA for VMWare](https://app.b
 ![remnux-screenshot](./images/remnux-26.png)
 27. Type `sudo reboot now` and wait for the reboot to finish
 ![remnux-screenshot](./images/remnux-27.png)
+
 
 
 ## References
