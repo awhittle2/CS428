@@ -339,6 +339,8 @@ Note: Please note that while OVF is not the same as OVA, VMware has a tool to ch
 2. Find the file, and select open. VMware should automatically start the import process
 ![flarevm-screenshot](./images/export-9.png)
 
+To view the exports we created, please refer to this link: https://oregonstate.box.com/s/b3npz71fuxbuhyhz8q9xfzq1d6zwvitm
+
 ## References
 - https://www.sentinelone.com/labs/building-a-custom-malware-analysis-lab-environment/
 - https://alexoloriz.com/building-a-malware-analysis-sandbox-a-step-by-step-guide/
